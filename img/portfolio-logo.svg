@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="50" viewBox="0 0 250 50">
+  <defs>
+    <clipPath id="clip-Portfolio_Logo_1">
+      <rect width="250" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Portfolio_Logo_1" data-name="Portfolio Logo – 1" clip-path="url(#clip-Portfolio_Logo_1)">
+    <text id="Natalie_Calhoun" data-name="Natalie Calhoun" transform="translate(125 35)" fill="#86a1a7" font-size="30" font-family="FranklinGothic-Demi, Franklin Gothic" font-weight="300"><tspan x="-104.993" y="0">Natalie Calhoun</tspan></text>
+  </g>
+</svg>
