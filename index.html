@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Natalie Calhoun - UI/UX Designer</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
     <div>
-      <img src="img/portfolio-logo.png" alt="Natalie Calhoun">
+      <a href="index.html"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun" height=50px></a>
     </div>
     <nav>
       <ul>
@@ -18,7 +22,7 @@
     </nav>
   </header>
   <main>
-    <div> <!-- open hero section -->
+    <div id="hero"> <!-- open hero section -->
       <div> <!-- open container -->
         <h1>
           Hi, my name is Natalie Calhoun!
@@ -30,7 +34,7 @@
         </p>
       </div> <!-- close container -->
     </div> <!-- close hero section -->
-    <div> <!-- open my work section -->
+    <div id="work"> <!-- open my work section -->
       <div> <!-- open container -->
         <h2>My Work</h2>
         <div> <!-- open row, project 1 -->
@@ -46,7 +50,7 @@
               Simple Saver is a responsive web application that gives users the ability to easily record and view data on their finances. The app was designed to address three user needs specified in the project brief. For this project I also created brand guidelines and conducted user testing to help develop the final product.
             </p> <!-- end project 1 paragraph -->
           </div> <!-- end second column -->
-          <a href="simple-saver.html">Read more</a> <!-- button or link label -->
+          <a href="simple-saver.html" class="button">Read more</a> <!-- button or link label -->
         </div> <!-- end row, project 1 -->
         <div> <!-- open row, project 2 -->
           <div> <!-- open first column, used for image -->
@@ -61,7 +65,7 @@
               Happy Greens is a recipe iOS app for those living a plant-based or vegetarian lifestyle that also want more traditional comfort food. User research was conducted using the research learning spiral method to develop three user personas. The Jobs To Be Done (JTBD) were then determined to develop the user flows before wireframing began.
             </p> <!-- end project 2 paragraph -->
           </div> <!-- end second column -->
-          <a href="happy-greens.html">Read more</a> <!-- button or link label -->
+          <a href="happy-greens.html" class="button">Read more</a> <!-- button or link label -->
         </div> <!-- end row, project 2 -->
       </div> <!-- end container -->
     </div> <!-- end my work section -->
@@ -74,14 +78,14 @@
       Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:13158717106">+1-315-871-7106</a>. Prefer sending an email?
     </p>
     <div> <!-- open email me CTA -->
-      <a href="mailto:nataliecalhoun1912@gmail.com"/>Email Me</a>
+      <a href="mailto:nataliecalhoun1912@gmail.com" class="button contact">Email Me</a>
     </div> <!-- end email me CTA -->
     <div> <!-- social media info -->
       <a href="https://www.linkedin.com/in/natalieacalhoun/" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
       </a>
       <a href="https://www.behance.net/nataliecalhoun" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm6.245,330.656c0.918,-13.824 -0.208,-27.022 -3.408,-39.661c-3.229,-12.658 -8.408,-23.944 -15.66,-33.809c-7.262,-9.885 -16.512,-17.781 -27.778,-23.613c-11.324,-5.908 -24.513,-8.805 -39.585,-8.805c-13.653,0 -25.98,2.424 -37.161,7.243c-11.172,4.847 -20.763,11.475 -28.858,19.873c-8.076,8.35 -14.23,18.31 -18.661,29.852c-4.355,11.503 -6.58,23.944 -6.58,37.265c0,13.775 2.14,26.491 6.391,37.975c4.298,11.541 10.329,21.369 18.093,29.681c7.972,8.285 17.439,14.628 28.772,19.163c11.343,4.469 23.973,6.741 38.004,6.741c20.138,0 37.407,-4.611 51.58,-13.861c14.344,-9.221 24.844,-24.531 31.774,-45.975l-43.097,0c-1.667,5.51 -5.984,10.822 -13.075,15.792c-7.158,4.98 -15.679,7.47 -25.544,7.47c-13.729,0 -24.323,-3.597 -31.66,-10.755c-7.347,-7.158 -12.1,-20.488 -12.1,-34.576l128.553,0Zm-280.454,77.294c11.04,0 21.805,-1.391 32.171,-4.137c10.491,-2.755 19.835,-6.997 27.987,-12.763c8.086,-5.718 14.647,-13.131 19.466,-22.277c4.781,-9.042 7.167,-19.778 7.167,-32.257c0,-15.394 -3.664,-28.517 -11.134,-39.49c-7.432,-10.897 -18.661,-18.557 -33.781,-22.912c11.106,-5.264 19.428,-12.033 25.089,-20.289c5.634,-8.275 8.436,-18.623 8.436,-31.007c0,-11.447 -1.884,-21.132 -5.624,-28.867c-3.844,-7.849 -9.212,-14.079 -16.066,-18.766c-6.969,-4.686 -15.196,-8.104 -24.853,-10.149c-9.705,-2.111 -20.328,-3.124 -32.096,-3.124l-115.999,0l0,246.038l119.237,0Zm-6.173,-109.655c11.655,0 21.132,2.679 28.252,8.076c7.091,5.463 10.67,14.476 10.67,27.153c0,6.467 -1.051,11.826 -3.238,15.954c-2.178,4.146 -5.188,7.422 -8.805,9.808c-3.636,2.481 -7.925,4.166 -12.772,5.217c-4.772,1.07 -9.847,1.543 -15.177,1.543l-57.829,0l0,-67.751l58.899,0Zm226.403,-26.671c-5.823,-6.428 -15.66,-9.913 -27.675,-9.913c-7.82,0 -14.287,1.316 -19.475,3.996c-5.075,2.651 -9.221,5.936 -12.393,9.818c-3.162,3.938 -5.302,8.104 -6.561,12.554c-1.25,4.336 -2.007,8.265 -2.225,11.74l79.605,0c-1.165,-12.478 -5.435,-21.709 -11.276,-28.195Zm-234.612,-67.799c4.801,0.001 9.469,0.341 13.937,1.212c4.535,0.786 8.455,2.225 11.92,4.318c3.484,2.016 6.258,4.885 8.35,8.559c2.017,3.673 3.011,8.407 3.011,14.125c0,10.32 -3.011,17.828 -9.24,22.382c-6.296,4.62 -14.249,6.893 -23.84,6.893l-54.828,0l0,-57.489l50.69,0Zm255.999,-1.126l0,-24.276l-99.733,0l0,24.276l99.733,0Z"/></svg>
+          <img src="img/behance-icon.svg" height="32px">
       </a>
     </div> <!--end social media info -->
     <p>Copyright Natalie Calhoun 2022</p>
