@@ -47,6 +47,13 @@ h4 {
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  font-weight: 400;
+  padding: 14px;
+  border-radius:50px;
+  transition: 0.2s opacity;
+}
+.button.info {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #A9C1C2;
   color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
