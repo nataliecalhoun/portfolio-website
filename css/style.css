@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   background-color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
@@ -5,6 +8,32 @@ body{
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #37383A;
+}
+header{
+  background-color: #F5F5F5;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 7px 7px 9px 0px rgba(50, 50, 50, 0.21);
+  width: 100%;
+  position: fixed;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+.logo{
+  max-width: 250px;
+  text-align: center;
+  width: 100%;
 }
 img {
   width: 100%;
@@ -71,6 +100,92 @@ h4 {
   color: #A9C1C2;
   border: 2px solid #A9C1C2;
 }
+#profile-pic {
+  max-width: 50%
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: left;
+  color: white;
+}
+#hero {
+  background-color: #A9C1C2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  padding-top: 133px;
+}
+#about {
+  padding-top: 133px;
+}
+.overview {
+  padding-top: 133px
+}
+#image {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.description {
+  color: white;
+}
+.icon {
+  height: 32px;
+  width: 32px;
+}
+#icon-row {
+  padding-top: 10px;
+  text-align: right;
+}
+#copyright {
+  text-align: right;
+}
+.screens {
+  text-align: center;
+}
+.simple-lowfid {
+  width: 30%;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+  margin: 4px;
+}
+.mockup {
+  width: 40%;
+  margin: 4px;
+}
+.mockups {
+  text-align: center;
+}
+.happy-lowfid {
+  width: 40%;
+  margin: 4px;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+}
+.lowfid {
+  text-align: center;
+}
+.happy-midfid {
+  width: 40%;
+  margin: 4px;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+}
+.midfid {
+  text-align: center;
+}
+#feedback {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*
 Colors used:
 Primary Color (Blue): #86A1A7;

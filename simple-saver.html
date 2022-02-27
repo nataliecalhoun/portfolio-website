@@ -10,11 +10,11 @@
 </head>
 <body>
   <header>
-    <div>
-      <a href="index.html"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
     </div>
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -22,17 +22,19 @@
     </nav>
   </header>
   <main>
-    <div> <!--open project overview section-->
-      <h1>Simple Saver</h1>
-      <picture>
-        <source srcset="img/simple-saver/simple-saver-main-small.png" media="(max-width:767px)">
-        <img src="img/simple-saver/simple-saver-main.png" alt="Simple Saver">
-      </picture>
-      <p>
-        Simple Saver is a responsive web application that gives people the ability to easily record and view data on their income and expenses. Simple Saver displays data on users' finances so that they can easily adapt their spending habits to reach their financial goals.
-      </p>
+    <div class="overview"> <!--open project overview section-->
+      <div class="container">
+        <h1>Simple Saver</h1>
+        <picture>
+          <source srcset="img/simple-saver/simple-saver-main-small.png" media="(max-width:767px)">
+          <img src="img/simple-saver/simple-saver-main.png" alt="Simple Saver">
+        </picture>
+        <p>
+          Simple Saver is a responsive web application that gives people the ability to easily record and view data on their income and expenses. Simple Saver displays data on users' finances so that they can easily adapt their spending habits to reach their financial goals.
+        </p>
+      </div>
     </div> <!--end project overview section-->
-    <div> <!--open process section-->
+    <div class="container"> <!--open process section-->
       <h2>My Process</h2>
       <div> <!--open user flow section-->
         <h3>User Flow</h3>
@@ -77,30 +79,30 @@
             After my low-fidelity wireframes were created, a greyscale design was made using Adobe XD. A screen was added to give the option of either logging in or creating an account.
           </p>
         </div> <!--end wireframing text section 2-->
-        <div> <!--open picture section-->
+        <div class="lowfid"> <!--open picture section-->
           <picture>
             <source srcset="img/simple-saver/launch-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/launch-mid-large.png" alt="Launch Mid">
+            <img class="simple-lowfid" src="img/simple-saver/launch-mid-large.png" alt="Launch Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/login-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/login-mid-large.png" alt="Login Mid">
+            <img class="simple-lowfid" src="img/simple-saver/login-mid-large.png" alt="Login Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/create-account-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/create-account-mid-large.png" alt="Create Account Mid">
+            <img class="simple-lowfid" src="img/simple-saver/create-account-mid-large.png" alt="Create Account Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/home-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/home-mid-large.png" alt="Home Mid">
+            <img class="simple-lowfid" src="img/simple-saver/home-mid-large.png" alt="Home Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/statistics-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/statistics-mid-large.png" alt="Statistics Mid">
+            <img class="simple-lowfid" src="img/simple-saver/statistics-mid-large.png" alt="Statistics Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/category-breakdown-mid.png" media="(max-width:767px)">
-            <img src="img/simple-saver/category-breakdown-mid-large.png" alt="Category Breakdown Mid">
+            <img class="simple-lowfid" src="img/simple-saver/category-breakdown-mid-large.png" alt="Category Breakdown Mid">
           </picture>
         </div> <!--end picture section-->
       </div> <!--end wireframing section-->
@@ -136,35 +138,35 @@
       </div> <!--end user testing section-->
       <div> <!--open final product section-->
         <h3>Final Product</h3>
-        <div> <!--open picture section-->
+        <div class="mockups"> <!--open picture section-->
           <picture>
             <source srcset="img/simple-saver/launch-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/launch-high-large.png" alt="Launch Mid">
+            <img class= "mockup" src="img/simple-saver/launch-high-large.png" alt="Launch Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/login-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/login-high-large.png" alt="Login Mid">
+            <img class= "mockup" src="img/simple-saver/login-high-large.png" alt="Login Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/create-account-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/create-account-high-large.png" alt="Create Account Mid">
+            <img class= "mockup" src="img/simple-saver/create-account-high-large.png" alt="Create Account Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/home-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/home-high-large.png" alt="Home Mid">
+            <img class= "mockup" src="img/simple-saver/home-high-large.png" alt="Home Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/statistics-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/statistics-high-large.png" alt="Statistics Mid">
+            <img class= "mockup" src="img/simple-saver/statistics-high-large.png" alt="Statistics Mid">
           </picture>
           <picture>
             <source srcset="img/simple-saver/category-breakdown-high.png" media="(max-width:767px)">
-            <img src="img/simple-saver/category-breakdown-high-large.png" alt="Category Breakdown Mid">
+            <img class= "mockup" src="img/simple-saver/category-breakdown-high-large.png" alt="Category Breakdown Mid">
           </picture>
         </div> <!--end picture section-->
       </div> <!--end final product section-->
     </div> <!--end process section-->
-    <div> <!--open conclusion section-->
+    <div class="container"> <!--open conclusion section-->
       <h2>Conclusion</h2>
       <p>
         I chose this project because I wanted to design an app which I believe would be a bit more challenging to design since finance isn't traditionally thought of as a very visually appealing subject. However, I really enjoyed creating a clean and sophisticated product. I ran into issues with user testing in greyscale since many users didn't realize that was intentional and most of the comments I received were about adding more color. So next time, this is something I would make clear beforehand.
@@ -173,7 +175,7 @@
   </main>
 </body>
 <footer id="contact">
-  <div> <!-- open container -->
+  <div class="container"> <!-- open container -->
     <h2>Get In Touch</h2>
     <p>
       Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:13158717106">+1-315-871-7106</a>. Prefer sending an email?
@@ -181,15 +183,15 @@
     <div> <!-- open email me CTA -->
       <a href="mailto:nataliecalhoun1912@gmail.com" class="button contact">Email Me</a>
     </div> <!-- end email me CTA -->
-    <div> <!-- social media info -->
+    <div id="icon-row"> <!-- social media info -->
       <a href="https://www.linkedin.com/in/natalieacalhoun/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
       </a>
       <a href="https://www.behance.net/nataliecalhoun" target="_blank">
-          <img src="img/behance-icon.svg" height="32px">
+          <img class="icon" src="img/behance-icon.png">
       </a>
     </div> <!--end social media info -->
-    <p>Copyright Natalie Calhoun 2022</p>
+    <p id="copyright">Copyright Natalie Calhoun 2022</p>
   </div> <!-- close container -->
 </footer>
 </html>

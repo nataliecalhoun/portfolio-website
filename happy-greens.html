@@ -10,11 +10,11 @@
 </head>
 <body>
   <header>
-    <div>
-      <a href="index.html"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
     </div>
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="index.html">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -22,17 +22,20 @@
     </nav>
   </header>
   <main>
-    <div> <!--open project overview section-->
-      <h1>Happy Greens</h1>
-      <picture>
-        <source srcset="img/happy-greens/happy-greens-main-small.jpg" media="(max-width:767px)">
-        <img src="img/happy-greens/happy-greens-main.jpg" alt="Happy Greens">
-      </picture>
-      <p>
-        Happy Greens is a recipe app for those living a plant-based or vegetarian lifestyle that want more family-friendly comfort food. ​It also provides meat-eaters with an easier transition to a plant-based lifestyle since they can access more comforting and traditional meals that they are used to.
-      </p>
-    </div> <!--end project overview section-->
-    <div> <!--open process section-->
+    <div class="overview"> <!--open project overview section-->
+      <div class="container">
+        <div>
+          <h1>Happy Greens</h1>
+          <picture>
+            <source srcset="img/happy-greens/happy-greens-main-small.jpg" media="(max-width:767px)">
+            <img src="img/happy-greens/happy-greens-main.jpg" alt="Happy Greens">
+          </picture>
+          <p>
+            Happy Greens is a recipe app for those living a plant-based or vegetarian lifestyle that want more family-friendly comfort food. ​It also provides meat-eaters with an easier transition to a plant-based lifestyle since they can access more comforting and traditional meals that they are used to.
+          </p>
+        </div> <!--end project overview section-->
+      </div>
+    <div class="container"> <!--open process section-->
       <h2>My Process</h2>
       <div> <!--open user research section-->
         <h3>User Research</h3>
@@ -73,44 +76,44 @@
           Low-fidelity wireframes were then created using the Crazy 8s method to generate ideas for the user flows. These sketches were then turned into digital prototypes using InVision for usability testing. Later mid-fidelity wireframes were created digitally using Adobe XD using the feedback from the usability testing.
         </p> <!--end paragraph 1-->
         <div> <!--open picture section-->
-          <div> <!--open low fidelity pictures-->
-            <picture>
+          <div class="lowfid"> <!--open low fidelity pictures-->
+            <picture >
               <source srcset="img/happy-greens/low-home.png" media="(max-width:767px)">
-              <img src="img/happy-greens/low-home-large.png" alt="Home">
+              <img class="happy-lowfid" src="img/happy-greens/low-home-large.png" alt="Home">
             </picture>
             <picture>
               <source srcset="img/happy-greens/low-all.png" media="(max-width:767px)">
-              <img src="img/happy-greens/low-all-large.png" alt="All Recipes">
+              <img class="happy-lowfid" src="img/happy-greens/low-all-large.png" alt="All Recipes">
             </picture>
             <picture>
               <source srcset="img/happy-greens/low-filter.png" media="(max-width:767px)">
-              <img src="img/happy-greens/low-filter-large.png" alt="Filters">
+              <img class="happy-lowfid" src="img/happy-greens/low-filter-large.png" alt="Filters">
             </picture>
             <picture>
               <source srcset="img/happy-greens/low-recipe.png" media="(max-width:767px)">
-              <img src="img/happy-greens/low-recipe-large.png" alt="Recipe">
+              <img class="happy-lowfid" src="img/happy-greens/low-recipe-large.png" alt="Recipe">
             </picture>
           </div> <!--end low fidelity pictures-->
           <picture>
             <source srcset="img/happy-greens/user-feedback.png" media="(max-width:767px)">
-            <img src="img/happy-greens/user-feedback-large.png" alt="User Feedback">
+            <img id="feedback" src="img/happy-greens/user-feedback-large.png" alt="User Feedback">
           </picture>
-          <div> <!--open mid fidelity pictures-->
+          <div class="midfid"> <!--open mid fidelity pictures-->
             <picture>
               <source srcset="img/happy-greens/mid-home.png" media="(max-width:767px)">
-              <img src="img/happy-greens/mid-home-large.png" alt="Home">
+              <img class="happy-midfid" src="img/happy-greens/mid-home-large.png" alt="Home">
             </picture>
             <picture>
               <source srcset="img/happy-greens/mid-menu.png" media="(max-width:767px)">
-              <img src="img/happy-greens/mid-menu-large.png" alt="All Recipes">
+              <img class="happy-midfid" src="img/happy-greens/mid-menu-large.png" alt="All Recipes">
             </picture>
             <picture>
               <source srcset="img/happy-greens/mid-all.png" media="(max-width:767px)">
-              <img src="img/happy-greens/mid-all-large.png" alt="Filters">
+              <img class="happy-midfid" src="img/happy-greens/mid-all-large.png" alt="Filters">
             </picture>
             <picture>
               <source srcset="img/happy-greens/mid-recipe.png" media="(max-width:767px)">
-              <img src="img/happy-greens/mid-recipe-large.png" alt="Recipe">
+              <img class="happy-midfid" src="img/happy-greens/mid-recipe-large.png" alt="Recipe">
             </picture>
           </div> <!--end mid fidelity pictures-->
         </div> <!-- end picture section-->
@@ -126,38 +129,38 @@
         <p>
           High-fidelity screens in color were then created, adding the colors and typography stated in the style guide. Responsive designs for the home screen were created for mobile, tablet and desktop so that the product can adapt easily to a variety of screen sizes.
         </p>
-        <div> <!--open mockup pictures-->
+        <div class="mockups"> <!--open mockup pictures-->
           <picture>
             <source srcset="img/happy-greens/mockup-home.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-home-large.png" alt="Home">
+            <img class="mockup" src="img/happy-greens/mockup-home-large.png" alt="Home">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-menu.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-menu-large.png" alt="All Recipes">
+            <img class="mockup" src="img/happy-greens/mockup-menu-large.png" alt="All Recipes">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-all.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-all-large.png" alt="Filters">
+            <img class="mockup" src="img/happy-greens/mockup-all-large.png" alt="Filters">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-filter.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-filter-large.png" alt="Recipe">
+            <img class="mockup" src="img/happy-greens/mockup-filter-large.png" alt="Recipe">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-filter-applied.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-filter-applied-large.png" alt="Home">
+            <img class="mockup" src="img/happy-greens/mockup-filter-applied-large.png" alt="Home">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-recipe.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-recipe-large.png" alt="All Recipes">
+            <img class="mockup" src="img/happy-greens/mockup-recipe-large.png" alt="All Recipes">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-collection.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-collection-large.png" alt="Filters">
+            <img class="mockup" src="img/happy-greens/mockup-collection-large.png" alt="Filters">
           </picture>
           <picture>
             <source srcset="img/happy-greens/mockup-create.png" media="(max-width:767px)">
-            <img src="img/happy-greens/mockup-create-large.png" alt="Recipe">
+            <img class="mockup" src="img/happy-greens/mockup-create-large.png" alt="Recipe">
           </picture>
         </div> <!--end mockup pictures-->
         <picture>
@@ -166,7 +169,7 @@
         </picture>
       </div> <!--end mockups and responsive design section-->
     </div> <!--end process section-->
-    <div> <!--open conclusion section-->
+    <div class="container"> <!--open conclusion section-->
       <h2>Conclusion</h2>
       <p>
         Throughout the process of creating Happy Greens, I tried to make it different from other recipe apps. The design is meant to convey a sense of comfort to go along with the theme of comfort family-friendly eating. This was done by looking at farmhouse-style interior décor for inspiration. This project helped me develop my user testing and research skills since I conducted initial user research, developed user personas, created user flows, and conducted usability testing.
@@ -175,7 +178,7 @@
   </main>
 </body>
 <footer id="contact">
-  <div> <!-- open container -->
+  <div class="container"> <!-- open container -->
     <h2>Get In Touch</h2>
     <p>
       Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:13158717106">+1-315-871-7106</a>. Prefer sending an email?
@@ -183,15 +186,15 @@
     <div> <!-- open email me CTA -->
       <a href="mailto:nataliecalhoun1912@gmail.com" class="button contact">Email Me</a>
     </div> <!-- end email me CTA -->
-    <div> <!-- social media info -->
+    <div id="icon-row"> <!-- social media info -->
       <a href="https://www.linkedin.com/in/natalieacalhoun/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
       </a>
       <a href="https://www.behance.net/nataliecalhoun" target="_blank">
-          <img src="img/behance-icon.svg" height="32px">
+          <img class="icon" src="img/behance-icon.png">
       </a>
     </div> <!--end social media info -->
-    <p>Copyright Natalie Calhoun 2022</p>
+    <p id="copyright">Copyright Natalie Calhoun 2022</p>
   </div> <!-- close container -->
 </footer>
 </html>
