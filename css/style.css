@@ -30,6 +30,9 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
+#hero h1 span {
+  font-weight: 300;
+}
 .logo{
   max-width: 250px;
   text-align: center;
@@ -58,7 +61,10 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: center;
+  background-color: #A9C1C2;
+  color: white;
 }
 
 h2 {
@@ -79,21 +85,19 @@ h4 {
   font-weight: 400;
   padding: 14px;
   border-radius:50px;
-  transition: 0.2s opacity;
-}
-.button.info {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #A9C1C2;
-  color: #FFFFFF; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 14px;
-  border-radius:50px;
-  border-bottom: 2px solid #86A1A7; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+.button.info {
+  background-color: #A9C1C2;
+  color: #FFFFFF; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 14px;
+  border-bottom: 2px solid #86A1A7; /* width of the border, type, color */
 }
 .button.contact {
   background-color: transparent;
@@ -101,7 +105,7 @@ h4 {
   border: 2px solid #A9C1C2;
 }
 #profile-pic {
-  max-width: 50%
+  max-width: 100%
 }
 /* Layout styling */
 .container {
@@ -110,9 +114,7 @@ h4 {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-#work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-}
+
 #hero h1 {
   text-align: left;
   color: white;
@@ -124,11 +126,8 @@ h4 {
   width: 100%;
   padding-top: 133px;
 }
-#about {
-  padding-top: 133px;
-}
 .overview {
-  padding-top: 133px
+  padding-top: 90px
 }
 #image {
   text-align: center;
@@ -185,7 +184,134 @@ h4 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  .simple-lowfid {
+    width: 30%;
+    box-shadow: none;
+    margin: 4px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-right: 10px;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding-right: 20px;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  #hero {
+    padding-top: 92px;
+    text-align: center;
+  }
+  #hero h1 {
+    text-align: center;
+  }
+  #hero span {
+  display: block;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  #about {
+    padding-top: 92px;
+  }
+  #about-page p {
+    padding-right: 30px;
+  }
+  #work h3 {
+    margin-bottom: 0px;
+  }
+  #profile-pic {
+    max-width: 50%;
+  }
+  #profile {
+    text-align: center;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+
+@media only screen and (min-width: 1024px) {
+  .col-md-5 {
+  width: 41.66%;
+  }
+  .col-md-7 {
+  width: 58.33%;
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+
+@media only screen and (min-width: 1440px) {
+
+}
 /*
 Colors used:
 Primary Color (Blue): #86A1A7;

@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body id="about-page">
   <header>
-    <div class="container">
-      <a href="index.html" class="logo"><img src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
-    </div>
+    <span class="container">
+      <a href="index.html"><img class="logo" src="img/portfolio-logo.svg" alt="Natalie Calhoun"></a>
+    </span>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Work</a></li>
@@ -22,19 +22,21 @@
     </nav>
   </header>
   <main>
-    <div id="about"> <!--open first section block-->
+    <div class="overview"> <!--open first section block-->
       <div class="container">
         <h1>About</h1>
       </div>
     </div> <!--end first section block-->
     <div class="container"> <!--open second section block-->
-      <picture>
-        <source srcset="img/profile-image-small.jpg" media="(max-width:767px)">
-        <img id="profile" src="img/profile-image.jpg" alt="About Picture" id="profile-pic">
-      </picture>
+      <div  id="profile">
+        <picture>
+          <source srcset="img/profile-image-small.jpg" media="(max-width:767px)">
+          <img src="img/profile-image.jpg" alt="About Picture" id="profile-pic">
+        </picture>
+      </div>
       <div> <!--open container-->
         <div> <!--open row for columns-->
-          <div> <!--open column 1 my story-->
+          <div class="col-md-6"> <!--open column 1 my story-->
             <h2>My Story</h2>
             <p>
               My name is Natalie Calhoun and I graduated from Royal Holloway, University of London with a bachelor’s degree in Management with Marketing. I spent two years doing marketing at a startup software company, where I did everything from social media marketing to maintaining the look of the website to designing all print and digital marketing materials.
@@ -44,7 +46,7 @@
             </p>
             <a href="files/Resume.pdf" target="_blank" class="button info">Download my resume</a>
           </div> <!--end column 1 my story-->
-          <div> <!--open column 2 skills and tools-->
+          <div class="col-md-6"> <!--open column 2 skills and tools-->
             <h2>Skills and Tools</h2>
             <div> <!--open skills and tools section-->
               <div> <!--open relevant skills section-->
