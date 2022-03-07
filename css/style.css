@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+/* ======= Text ========= */
 body{
   background-color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
@@ -8,53 +9,6 @@ body{
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #37383A;
-}
-header{
-  background-color: #F5F5F5;
-  padding: 10px 5px;
-  text-align: center;
-  box-shadow: 7px 7px 9px 0px rgba(50, 50, 50, 0.21);
-  width: 100%;
-  position: fixed;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0
-}
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-#hero h1 span {
-  font-weight: 300;
-}
-.logo{
-  max-width: 250px;
-  text-align: center;
-  width: 100%;
-}
-img {
-  width: 100%;
-}
-a:visited { /* visited link */
-  color: #86A1A7;
-}
-a:active { /* selected link */
-  color: #86A1A7;
-}
-a {
-  color: #86A1A7;
-  text-decoration: none; /* No underlining */
-}
-a:hover,
-a:focus {
-  color: #A9C1C2;
-  text-decoration: underline; /* Underlining when hovering over a link */
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -80,6 +34,64 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+/* ======= Header ========= */
+header{
+  background-color: #F5F5F5;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 7px 7px 9px 0px rgba(50, 50, 50, 0.21);
+  width: 100%;
+  position: fixed;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+.logo{
+  max-width: 250px;
+  text-align: center;
+  width: 100%;
+}
+/* ======= Hero ========= */
+#hero h1 span {
+  font-weight: 300;
+}
+#hero h1 {
+  text-align: left;
+  color: white;
+}
+#hero {
+  background-color: #A9C1C2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  padding-top: 133px;
+}
+/* ======= Buttons and Links ========= */
+a:visited { /* visited link */
+  color: #86A1A7;
+}
+a:active { /* selected link */
+  color: #86A1A7;
+}
+a {
+  color: #86A1A7;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #A9C1C2;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   font-weight: 400;
@@ -104,10 +116,65 @@ h4 {
   color: #A9C1C2;
   border: 2px solid #A9C1C2;
 }
+.button.contact:hover {
+  opacity: 0.6;
+}
+/* ======= Images ========= */
+img {
+  width: 100%;
+}
+#image {
+  text-align: center;
+}
 #profile-pic {
   max-width: 100%
 }
-/* Layout styling */
+.screens {
+  text-align: center;
+}
+.simple-lowfid {
+  width: 30%;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+  margin: 4px;
+}
+.mockup {
+  width: 25%;
+  margin: 6px;
+}
+.mockups {
+  text-align: center;
+}
+.happy-lowfid {
+  width: 20%;
+  margin: 5px;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+}
+.lowfid {
+  text-align: center;
+}
+.happy-midfid {
+  width: 20%;
+  margin: 5px;
+  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
+}
+.midfid {
+  text-align: center;
+}
+#feedback {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 70%;
+}
+.project-image {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.picture-row {
+  width: 100%;
+  text-align: center;
+}
+/* ======= Layout Styling ========= */
 .container {
   padding: 0 15px;
 }
@@ -115,22 +182,8 @@ h4 {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#hero h1 {
-  text-align: left;
-  color: white;
-}
-#hero {
-  background-color: #A9C1C2;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  padding-top: 133px;
-}
 .overview {
   padding-top: 90px
-}
-#image {
-  text-align: center;
 }
 .center {
   text-align: center;
@@ -142,6 +195,9 @@ h4 {
   height: 32px;
   width: 32px;
 }
+.icon-link:hover {
+  text-decoration: none;
+}
 #icon-row {
   padding-top: 10px;
   text-align: right;
@@ -149,78 +205,8 @@ h4 {
 #copyright {
   text-align: right;
 }
-.screens {
-  text-align: center;
-}
-.simple-lowfid {
-  width: 30%;
-  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
-  margin: 4px;
-}
-.mockup {
-  width: 40%;
-  margin: 4px;
-}
-.mockups {
-  text-align: center;
-}
-.happy-lowfid {
-  width: 40%;
-  margin: 4px;
-  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
-}
-.lowfid {
-  text-align: center;
-}
-.happy-midfid {
-  width: 40%;
-  margin: 4px;
-  box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.21);
-}
-.midfid {
-  text-align: center;
-}
-#feedback {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-}
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -233,9 +219,9 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
   .simple-lowfid {
-    width: 30%;
+    width: 25%;
     box-shadow: none;
-    margin: 4px;
+    margin: 6px;
   }
   nav {
     width: auto;
