@@ -37,18 +37,15 @@ h4 {
 /* ======= Header ========= */
 header{
   background-color: #F5F5F5;
-  padding: 10px 5px;
-  text-align: center;
+  padding: 10px 20px 4px;
   box-shadow: 7px 7px 9px 0px rgba(50, 50, 50, 0.21);
   width: 100%;
   position: fixed;
 }
 nav > ul {
   list-style-type: none;
-  padding: 0
-}
-nav > ul > li {
-  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -56,8 +53,26 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #FFFFFF;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right:0;
+}
 .logo{
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
   width: 100%;
 }
@@ -74,7 +89,7 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  padding-top: 133px;
+  padding-top: 120px;
 }
 /* ======= Buttons and Links ========= */
 a:visited { /* visited link */
@@ -241,7 +256,7 @@ Medium devices (640px and larger)
   display: table;
   }
   #hero {
-    padding-top: 92px;
+    padding-top: 140px;
     text-align: center;
   }
   #hero h1 {
@@ -271,8 +286,23 @@ Medium devices (640px and larger)
   #profile {
     text-align: center;
   }
-}
-
+  .logo{
+    max-width: 250px;
+    text-align: center;
+    width: 100%;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
