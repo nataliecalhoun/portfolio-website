@@ -120,16 +120,16 @@ a:focus {
   text-decoration: none;
 }
 .button.info {
-  background-color: #A9C1C2;
+  background-color: #577A7D;
   color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
   padding: 14px;
-  border-bottom: 2px solid #86A1A7; /* width of the border, type, color */
+  border-bottom: 2px solid #395052; /* width of the border, type, color */
 }
 .button.contact {
   background-color: transparent;
-  color: #A9C1C2;
-  border: 2px solid #A9C1C2;
+  color: #597D7E;
+  border: 2px solid #597D7E;
 }
 .button.contact:hover {
   opacity: 0.6;
@@ -193,12 +193,17 @@ img {
 .container {
   padding: 0 15px;
 }
+.heading-one {
+  padding-top: 0px;
+  padding-left: 172px;
+  padding-right: 172px;
+}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 .overview {
-  padding-top: 90px
+  padding-top: 62px;
 }
 .center {
   text-align: center;
@@ -256,7 +261,7 @@ Medium devices (640px and larger)
   display: table;
   }
   #hero {
-    padding-top: 140px;
+    padding-top: 100px;
     text-align: center;
   }
   #hero h1 {
